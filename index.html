@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dog Breed Picker</h1>
+    <div class="container">
+        <div class="breed-card" data-breed="labrador">
+            <img src="images/labrador.jpg" alt="Labrador">
+            <h3>Labrador Retriever</h3>
+            <button onclick="pickBreed('labrador', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="german_shepherd">
+            <img src="images/german_shepherd.jpg" alt="German Shepherd">
+            <h3>German Shepherd</h3>
+            <button onclick="pickBreed('german_shepherd', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="golden_retriever">
+            <img src="images/golden_retriever.jpg" alt="Golden Retriever">
+            <h3>Golden Retriever</h3>
+            <button onclick="pickBreed('golden_retriever', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="bulldog">
+            <img src="images/bulldog.jpg" alt="Bulldog">
+            <h3>Bulldog</h3>
+            <button onclick="pickBreed('bulldog', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="beagle">
+            <img src="images/beagle.jpg" alt="Beagle">
+            <h3>Beagle</h3>
+            <button onclick="pickBreed('beagle', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="poodle">
+            <img src="images/poodle.jpg" alt="Poodle">
+            <h3>Poodle</h3>
+            <button onclick="pickBreed('poodle', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="rottweiler">
+            <img src="images/rottweiler.jpg" alt="Rottweiler">
+            <h3>Rottweiler</h3>
+            <button onclick="pickBreed('rottweiler', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="yorkshire_terrier">
+            <img src="images/yorkshire_terrier.jpg" alt="Yorkshire Terrier">
+            <h3>Yorkshire Terrier</h3>
+            <button onclick="pickBreed('yorkshire_terrier', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="boxer">
+            <img src="images/boxer.jpg" alt="Boxer">
+            <h3>Boxer</h3>
+            <button onclick="pickBreed('boxer', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="dachshund">
+            <img src="images/dachshund.jpg" alt="Dachshund">
+            <h3>Dachshund</h3>
+            <button onclick="pickBreed('dachshund', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="siberian_husky">
+            <img src="images/siberian_husky.jpg" alt="Siberian Husky">
+            <h3>Siberian Husky</h3>
+            <button onclick="pickBreed('siberian_husky', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="great_dane">
+            <img src="images/great_dane.jpg" alt="Great Dane">
+            <h3>Great Dane</h3>
+            <button onclick="pickBreed('great_dane', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="shih_tzu">
+            <img src="images/shih_tzu.jpg" alt="Shih Tzu">
+            <h3>Shih Tzu</h3>
+            <button onclick="pickBreed('shih_tzu', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="chihuahua">
+            <img src="images/chihuahua.jpg" alt="Chihuahua">
+            <h3>Chihuahua</h3>
+            <button onclick="pickBreed('chihuahua', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="pomeranian">
+            <img src="images/pomeranian.jpg" alt="Pomeranian">
+            <h3>Pomeranian</h3>
+            <button onclick="pickBreed('pomeranian', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="border_collie">
+            <img src="images/border_collie.jpg" alt="Border Collie">
+            <h3>Border Collie</h3>
+            <button onclick="pickBreed('border_collie', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="basset_hound">
+            <img src="images/basset_hound.jpg" alt="Basset Hound">
+            <h3>Basset Hound</h3>
+            <button onclick="pickBreed('basset_hound', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="cocker_spaniel">
+            <img src="images/cocker_spaniel.jpg" alt="Cocker Spaniel">
+            <h3>Cocker Spaniel</h3>
+            <button onclick="pickBreed('cocker_spaniel', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="doberman">
+            <img src="images/dobermann.jpg" alt="Doberman Pinscher">
+            <h3>Doberman Pinscher</h3>
+            <button onclick="pickBreed('doberman', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="pug">
+            <img src="images/pug.jpg" alt="Pug">
+            <h3>Pug</h3>
+            <button onclick="pickBreed('pug', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+        <div class="breed-card" data-breed="maltese">
+            <img src="images/maltese.jpg" alt="Maltese">
+            <h3>Maltese</h3>
+            <button onclick="pickBreed('maltese', this)">Pick</button>
+            <div class="breed-info"></div>
+        </div>
+    </div>
+    <script src="scriptt.js"></script>
+</body>
+</html>
