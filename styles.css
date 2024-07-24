@@ -13,6 +13,7 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .container {
@@ -35,12 +36,24 @@ h1 {
     padding: 16px;
     width: 300px;
     text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.breed-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .breed-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.breed-card:hover img {
+    transform: scale(1.1);
 }
 
 .breed-card .breed-info {
@@ -50,6 +63,13 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.breed-card.show-info .breed-info {
+    display: block;
+    opacity: 1;
 }
 
 .breed-card button {
@@ -64,9 +84,23 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .breed-card button:hover {
     background-color: #9cffa1;
+    transform: scale(1.1);
+}
+
+.breed-card button.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
